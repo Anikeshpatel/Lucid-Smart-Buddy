@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.FileAttribute;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -131,6 +133,22 @@ public class Working implements Initializable {
         initFiles = new InitFiles();
         initFiles.start();
         initFiles.setOnSucceeded(e->{
+            comPro.setOpacity(0);
+            dirPro.setOpacity(0);
+            docPro.setOpacity(0);
+            exePro.setOpacity(0);
+            jarPro.setOpacity(0);
+            musicPro.setOpacity(0);
+            picPro.setOpacity(0);
+            vidPro.setOpacity(0);
+            comStatus.setText(compressed.size()+" Found");
+            dirStatus.setText(allDir.size()+" Found");
+            docStatus.setText(documents.size()+" Found");
+            exeStatus.setText(executables.size()+" Found");
+            jarStatus.setText(jar.size()+" Found");
+            musicStatus.setText(music.size()+" Found");
+            picStatus.setText(images.size()+" Found");
+            vidStatus.setText(videos.size()+" Found");
             System.out.println("Success");
         });
     }
@@ -152,37 +170,42 @@ public class Working implements Initializable {
                         if (files[i].isFile()){
                             allFiles.add(files[i].getName());
                             String fileName = files[i].getName().toLowerCase();
-                            if (fileName.contains(".png") || fileName.contains(".jpg") || fileName.contains(".gif")){
+                            if (fileName.contains(".png") || fileName.contains(".jpg") || fileName.contains(".gif") || fileName.contains(".jpeg")){
                                 images.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images\\"+fileName);
                             }
                             if (fileName.contains(".mp4") || fileName.contains(".3gp") || fileName.contains(".mkv") || fileName.contains(".flv")){
                                 videos.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);
                             }
                             if (fileName.contains(".mp3") || fileName.contains(".wav") || fileName.contains(".ac3")){
                                 music.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);
                             }
                             if (fileName.contains(".doc") || fileName.contains(".pdf") || fileName.contains(".epub")){
                                 documents.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents\\"+fileName);
                             }
                             if (fileName.contains(".zip") || fileName.contains(".rar") || fileName.contains(".tar")){
                                 compressed.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed\\"+fileName);
                             }
                             if (fileName.contains(".jar") || fileName.contains(".java") || fileName.contains(".class")){
                                 jar.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java");
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java\\"+fileName);
+                            }
+                            if (fileName.contains(".exe") || fileName.contains(".deb") || fileName.contains(".msi")){
+                                jar.add(files[i].getName());
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Softwares\\"+fileName);
                             }
                             /*if (fileName.contains(".")){
                                 other.add(files[i].getName());
                                 moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Other");
                             }*/
                         }
-                        if (files[i].isDirectory())
+                        if (files[i].isDirectory()){
                             allDir.add(files[i].getName());
+                        }
                     }
                     return null;
                 }
@@ -191,13 +214,13 @@ public class Working implements Initializable {
     }
 
     private void moveFile(String source,String dest){
-        File destination = new File(dest);
+        File destination = new File(new File(dest).getParent());
         if (!destination.exists()){
             destination.mkdir();
             System.out.println("Dir Not Exist");
         }
         try {
-            Files.copy(Paths.get(source),Paths.get(dest));
+            Files.move(Paths.get(source),Paths.get(dest), StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
             e.printStackTrace();
         }

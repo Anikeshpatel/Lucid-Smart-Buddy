@@ -45,7 +45,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="65.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="picStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="picStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="picPro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -59,7 +59,7 @@
             </ImageView>
             <Pane layoutX="13.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="comStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="comStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="comPro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -73,7 +73,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="vidStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="vidStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="vidPro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -87,7 +87,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="exeStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="exeStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="exePro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -101,7 +101,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="musicStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="musicStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="musicPro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -115,7 +115,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="jarStatus" layoutX="34.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="jarStatus" layoutX="34.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="jarPro" layoutX="56.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -129,7 +129,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="docStatus" layoutX="29.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="docStatus" layoutX="29.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="docPro" layoutX="51.0" layoutY="6.0" />
                </children>
             </Pane>
@@ -143,7 +143,7 @@
             </ImageView>
             <Pane layoutX="12.0" layoutY="63.0" prefHeight="62.0" prefWidth="151.0">
                <children>
-                  <Label fx:id="dirStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" />
+                  <Label fx:id="dirStatus" layoutX="28.0" layoutY="23.0" text="No Images Found" textAlignment="CENTER" />
                   <JFXSpinner fx:id="dirPro" layoutX="50.0" layoutY="6.0" />
                </children>
             </Pane>

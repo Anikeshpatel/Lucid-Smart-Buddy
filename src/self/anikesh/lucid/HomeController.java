@@ -83,12 +83,14 @@ public class HomeController implements Initializable {
             chooser.setInitialDirectory(new File("C:\\Users\\"+System.getProperty("user.name")+"\\Downloads"));
             chooser.setTitle("Choose Any Crowd Folder");
             File workingDir = chooser.showDialog(root.getScene().getWindow());
-            Working.setWorkingDir(workingDir.getAbsolutePath());
-            Stage curStage = (Stage) root.getScene().getWindow();
-            try {
-                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Working_window.fxml"))));
-            } catch (IOException e1) {
-                e1.printStackTrace();
+            if (workingDir != null){
+                Working.setWorkingDir(workingDir.getAbsolutePath());
+                Stage curStage = (Stage) root.getScene().getWindow();
+                try {
+                    curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Working_window.fxml"))));
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
             }
         });
     }
