@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="750.0" stylesheets="@Home.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.anikesh.lucid.HomeController">
+   <children>
+      <AnchorPane fx:id="home_pane1" layoutX="14.0" layoutY="97.0" prefHeight="244.0" prefWidth="300.0" styleClass="home-pane" AnchorPane.leftAnchor="40.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="94.0" prefHeight="55.0" prefWidth="104.0" text="Start" textFill="WHITE" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="home_pane2" layoutX="436.0" layoutY="97.0" prefHeight="244.0" prefWidth="300.0" styleClass="home-pane" AnchorPane.rightAnchor="40.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="94.0" prefHeight="55.0" prefWidth="104.0" text="Start" textFill="WHITE" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="27.0" prefWidth="756.0" styleClass="tool-bar">
+         <children>
+            <Label fx:id="exit" layoutX="702.0" layoutY="4.0" styleClass="exit" text="X" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="min" layoutX="656.0" layoutY="4.0" prefHeight="0.0" prefWidth="24.0" text="_" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="exit" />
+                  <String fx:value="mini" />
+               </styleClass>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
