@@ -14,8 +14,10 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.setTitle("Lucid Smart Buddy");
         primaryStage.setResizable(false);
-        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
+
+
     }
 
     public static void main(String[] args) {
