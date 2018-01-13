@@ -255,7 +255,7 @@ public class Working implements Initializable {
                                 videos.add(files[i].getName());
                                 moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);
                             }
-                            if (fileName.contains(".mp3") || fileName.contains(".wav") || fileName.contains(".ac3")){
+                            if (fileName.contains(".mp3") || fileName.contains(".wav") || fileName.contains(".ac3") || fileName.contains(".aac") || fileName.contains(".m4a") || fileName.contains(".ogg")){
                                 music.add(files[i].getName());
                                 moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);
                             }
