@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="420.0" fx:controller="self.anikesh.lucid.Splash" prefWidth="750.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="771.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/splash.png.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="204.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font name="Arial" size="92.0" />
+         </font>
+      </Text>
+      <Label fx:id="userName" layoutX="309.0" layoutY="240.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
