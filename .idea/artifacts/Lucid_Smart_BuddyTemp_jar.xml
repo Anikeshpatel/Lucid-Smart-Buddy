@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lucid-Smart-BuddyTemp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lucid_Smart_BuddyTemp_jar</output-path>
+    <root id="archive" name="Lucid-Smart-BuddyTemp.jar">
+      <element id="module-output" name="Lucid-Smart-BuddyTemp" />
+      <element id="extracted-dir" path="P:/Java/JavaFx/Library/jfoenix-9.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
