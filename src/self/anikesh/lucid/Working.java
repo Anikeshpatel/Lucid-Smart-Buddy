@@ -203,6 +203,9 @@ public class Working implements Initializable {
             musicStatus.setText(music.size()+" Found");
             picStatus.setText(images.size()+" Found");
             vidStatus.setText(videos.size()+" Found");
+
+            commonPro1.setVisible(false);
+            commonPro2.setVisible(false);
         });
 
         backBtn.setOnMouseClicked(e->{
