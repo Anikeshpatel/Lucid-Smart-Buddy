@@ -1,23 +1,30 @@
 package self.anikesh.lucid;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXProgressBar;
 import com.jfoenix.controls.JFXSpinner;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.animation.TranslateTransition;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.nio.file.attribute.FileAttribute;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -80,6 +87,27 @@ public class Working implements Initializable {
     private Label dirStatus;
 
     @FXML
+    private Pane backBtn;
+
+    @FXML
+    private Pane menu;
+
+    @FXML
+    private Pane menu_btn;
+
+    @FXML
+    private JFXButton menu_home;
+
+    @FXML
+    private JFXButton menu_status;
+
+    @FXML
+    private JFXButton menu_about;
+
+    @FXML
+    private JFXButton menu_exit;
+
+    @FXML
     private JFXProgressBar commonPro1;
 
     @FXML
@@ -92,8 +120,11 @@ public class Working implements Initializable {
     private static String dir;
     private ArrayList<String> allFiles,allDir,images,videos,music,documents,compressed,jar,executables,other;
     private InitFiles initFiles;
+    private TranslateTransition slideTransition;
+    private Integer toggle = 1;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        menu.setVisible(false);
         final double[] xOffset = new double[1];
         final double[] yOffset = new double[1];
         exit.setOnMouseClicked(e->{
@@ -116,6 +147,11 @@ public class Working implements Initializable {
                 root.getScene().getWindow().setY(event.getScreenY() - yOffset[0]);
             }
         });
+
+        slideTransition = new TranslateTransition(Duration.seconds(1),root);
+        slideTransition.setFromX(0);
+        slideTransition.setToX(-750);
+
         allFiles = new ArrayList<String>();
         allDir = new ArrayList<String>();
         images = new ArrayList<String>();
@@ -127,20 +163,38 @@ public class Working implements Initializable {
         executables = new ArrayList<String>();
         other = new ArrayList<String>();
 
+        comStatus.setVisible(false);
+        vidStatus.setVisible(false);
+        picStatus.setVisible(false);
+        musicStatus.setVisible(false);
+        jarStatus.setVisible(false);
+        exeStatus.setVisible(false);
+        docStatus.setVisible(false);
+        dirStatus.setVisible(false);
+
         workingDir = new File(dir);
-        System.out.println("Working Dir Is : "+workingDir.getAbsolutePath());
 
         initFiles = new InitFiles();
         initFiles.start();
         initFiles.setOnSucceeded(e->{
-            comPro.setOpacity(0);
-            dirPro.setOpacity(0);
-            docPro.setOpacity(0);
-            exePro.setOpacity(0);
-            jarPro.setOpacity(0);
-            musicPro.setOpacity(0);
-            picPro.setOpacity(0);
-            vidPro.setOpacity(0);
+            comPro.setVisible(false);
+            dirPro.setVisible(false);
+            docPro.setVisible(false);
+            exePro.setVisible(false);
+            jarPro.setVisible(false);
+            musicPro.setVisible(false);
+            picPro.setVisible(false);
+            vidPro.setVisible(false);
+
+            comStatus.setVisible(true);
+            vidStatus.setVisible(true);
+            picStatus.setVisible(true);
+            musicStatus.setVisible(true);
+            jarStatus.setVisible(true);
+            exeStatus.setVisible(true);
+            docStatus.setVisible(true);
+            dirStatus.setVisible(true);
+
             comStatus.setText(compressed.size()+" Found");
             dirStatus.setText(allDir.size()+" Found");
             docStatus.setText(documents.size()+" Found");
@@ -149,10 +203,33 @@ public class Working implements Initializable {
             musicStatus.setText(music.size()+" Found");
             picStatus.setText(images.size()+" Found");
             vidStatus.setText(videos.size()+" Found");
-            System.out.println("Success");
+        });
+
+        backBtn.setOnMouseClicked(e->{
+            try {
+                goToHome();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        });
+
+        menu_btn.setOnMouseClicked(e->{
+            if (toggle.equals(1)){
+                menu.setVisible(true);
+                toggle *= -1;
+            }else {
+                menu.setVisible(false);
+                toggle *= -1;
+            }
+        });
+        menu_home.setOnAction(e->{
+            try {
+                goToHome();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
         });
     }
-
 
 
     public static void setWorkingDir(String dir){
@@ -213,23 +290,41 @@ public class Working implements Initializable {
         }
     }
 
+    private void goToHome() throws IOException {
+        slideTransition.play();
+        slideTransition.setOnFinished(e->{
+            Stage curStage = (Stage) root.getScene().getWindow();
+            try {
+                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        });
+
+    }
+
     private void moveFile(String source,String dest){
         File destination = new File(new File(dest).getParent());
         if (!destination.exists()){
             destination.mkdir();
-            System.out.println("Dir Not Exist");
         }
         try {
             Files.move(Paths.get(source),Paths.get(dest), StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ignored){
         }
     }
 
+    @FXML
+    void doneBtnAction(ActionEvent event) throws IOException {
+        goToHome();
+    }
     private void exit() {
         System.exit(0);
     }
-
+    @FXML
+    void quit(ActionEvent event) {
+        System.exit(0);
+    }
     private void minimize() {
         Stage curStage = (Stage)root.getScene().getWindow();
         curStage.setIconified(true);
