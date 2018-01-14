@@ -1,0 +1,83 @@
+.root{
+    -fx-background-color: white;
+}
+.tool-bar{
+    -fx-background-color: #03A9F4;
+    -fx-effect: dropshadow(gaussian, gray, 20, 0.1, 0, 5);
+}
+.home-pane{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, gray, 50, 0.2, 0, 0);
+    -fx-background-radius: 10;
+}
+.home-pane:hover{
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+.home-pane:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+.exit{
+    -fx-pref-width: 20;
+    -fx-pref-height: 10;
+    -fx-alignment: center;
+
+}
+.exit:hover{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.mini:hover{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.mini:pressed{
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+}
+.exit:pressed{
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+}
+.black{
+    -fx-background-color: black;
+    -fx-background-radius: 10;
+}
+.preview_pane{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, #607D8B, 10, 0.5, 0, 0);
+}
+.pushy-btn{
+    -fx-pref-width: 100;
+    -fx-pref-height: 50;
+    -fx-background-color: #03A9F4;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #007ff4, 0, 0,0,5);
+}
+.pushy-btn:pressed{
+    -fx-effect: dropshadow(gaussian,#007ff4,0,0,0,0);
+    -fx-translate-y: 5;
+}
+.menu{
+    -fx-background-color: #e7e7e7;
+}
+.menu .button{
+    -fx-border-color: white;
+    -fx-background-color: #e7e7e7;
+}
+.menu .button:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, gray, 10, 0.5, 5, 0);
+}
+.menu .button:pressed{
+    -fx-border-color: white;
+    -fx-background-color: #e7e7e7;
+    -fx-effect: dropshadow(gaussian, gray, 0, 1.0, 0, 0);
+}
+.red{
+    -fx-background-color: red;
+}
