@@ -13,8 +13,10 @@ import javafx.util.Duration;
 import java.io.IOException;
 
 public class Main extends Application {
+    public static Stage curStage;
     @Override
     public void start(Stage primaryStage) throws Exception {
+        curStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("splash.fxml"));
         FadeTransition transition = new FadeTransition(Duration.seconds(3),root);
         transition.setFromValue(1);

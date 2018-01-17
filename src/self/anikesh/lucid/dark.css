@@ -1,6 +1,7 @@
 *{
     primary : #2A2E37;
     secondary : #FFFF8D;
+    secondary-hover : #ffe538;
     text_color : white;
     hover_text : #B2B2B2;
 }
@@ -65,4 +66,18 @@
 #working_progress .percentage{
     -fx-fill: white;
     -fx-font-size: 20;
+}
+.pushy-button{
+    -fx-background-color: secondary;
+    -fx-text-fill: primary;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-effect: dropshadow(gaussian, secondary-hover, 0, 1.0, 0, 5);
+}
+.pushy-button:pressed{
+    -fx-effect: dropshadow(gaussian, secondary-hover, 0, 1.0, 0, 0);
+    -fx-translate-y: 5;
+}
+.popup{
+    -fx-border-color: secondary;
 }

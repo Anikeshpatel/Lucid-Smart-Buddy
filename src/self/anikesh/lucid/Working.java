@@ -1,8 +1,6 @@
 package self.anikesh.lucid;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXProgressBar;
-import com.jfoenix.controls.JFXSpinner;
 import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
@@ -11,22 +9,19 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.animation.TranslateTransition;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressIndicator;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -122,14 +117,16 @@ public class Working implements Initializable {
         working_progress.progressProperty().bind(initFiles.progressProperty());
 
         initFiles.setOnSucceeded(e->{
-            /*Stage newStage = new Stage(StageStyle.TRANSPARENT);
+            Stage newStage = new Stage(StageStyle.TRANSPARENT);
             try {
-                Scene scene = new Scene(FXMLLoader.load(getClass().getResource("status.fxml")));
+                Scene scene = new Scene(FXMLLoader.load(getClass().getResource("complete_popup.fxml")));
                 newStage.setScene(scene);
+                /*newStage.initModality(Modality.APPLICATION_MODAL);
+                newStage.initOwner(root.getScene().getWindow());*/
                 newStage.show();
             } catch (IOException e1) {
                 e1.printStackTrace();
-            }*/
+            }
 
         });
 
