@@ -68,8 +68,8 @@ public class HomeController implements Initializable {
     private FadeTransition openTransition;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         menu.setVisible(false);
+
         final double[] xOffset = new double[1];
         final double[] yOffset = new double[1];
 
@@ -155,6 +155,7 @@ public class HomeController implements Initializable {
         Stage curStage = (Stage)root.getScene().getWindow();
         curStage.setIconified(true);
     }
+
 }
 
 

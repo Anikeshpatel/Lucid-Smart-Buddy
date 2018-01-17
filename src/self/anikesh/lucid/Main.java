@@ -1,11 +1,11 @@
 package self.anikesh.lucid;
 
 import javafx.animation.FadeTransition;
-import javafx.animation.RotateTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
@@ -33,6 +33,8 @@ public class Main extends Application {
                 e1.printStackTrace();
             }
         });
+
+        Font.loadFont(getClass().getResource("../../../Resources/fonts/DFPop91.ttf").toExternalForm(),5);
 
     }
 

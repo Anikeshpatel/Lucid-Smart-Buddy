@@ -1,0 +1,68 @@
+*{
+    primary : #455A64;
+    secondary : rgba(222, 222, 222, 0.55);
+    text_color : white;
+    hover_text : #B2B2B2;
+}
+.root{
+    -fx-background-color: primary;
+}
+#toolbar{
+    -fx-background-color: primary;
+    -fx-border-color: secondary;
+    -fx-border-width: 0 5 0 5;
+}
+.home_pane{
+    -fx-background-color: secondary;
+    -fx-background-radius: 30 0 30 0;
+    -fx-border-color: secondary;
+    -fx-border-radius: 30 0 30 0;
+}
+.home_pane:hover{
+    -fx-translate-x: -10;
+}
+.home_pane:pressed{
+    -fx-translate-x: 10;
+}
+#home_logo{
+    -fx-border-color: secondary;
+    -fx-border-radius: 50 50 50 50;
+    -fx-border-width: 1 0 1 0;
+}
+.menu{
+    -fx-background-color: primary;
+}
+.button{
+    -fx-border-color: secondary;
+    -fx-text-fill: text_color;
+    -fx-border-width: 1 0 0 0;
+    -fx-background-color: primary;
+}
+.menu .button:hover{
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+.menu .button:pressed{
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-border-color: secondary;
+    -fx-background-color: primary;
+}
+#menu_exit{
+    -fx-border-color: secondary;
+    -fx-border-width: 1 0 1 0 ;
+}
+#working_progress{
+    -fx-progress-color: secondary;
+}
+#working_progress .tick{
+    -fx-background-color: primary;
+}
+#working_progress .indicator{
+    -fx-background-color: transparent;
+}
+#working_progress .percentage{
+    -fx-fill: white;
+    -fx-font-size: 20;
+}
+

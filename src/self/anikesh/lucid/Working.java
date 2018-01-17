@@ -14,10 +14,12 @@ import javafx.animation.TranslateTransition;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import java.io.File;
 import java.io.IOException;
@@ -42,58 +44,16 @@ public class Working implements Initializable {
     private Label min;
 
     @FXML
-    private Label picStatus;
-
-    @FXML
-    private JFXSpinner picPro;
-
-    @FXML
-    private Label comStatus;
-
-    @FXML
-    private JFXSpinner comPro;
-
-    @FXML
-    private Label vidStatus;
-
-    @FXML
-    private JFXSpinner vidPro;
-
-    @FXML
-    private Label exeStatus;
-
-    @FXML
-    private JFXSpinner exePro;
-
-    @FXML
-    private Label musicStatus;
-
-    @FXML
-    private JFXSpinner musicPro;
-
-    @FXML
-    private Label jarStatus;
-
-    @FXML
-    private JFXSpinner jarPro;
-
-    @FXML
-    private Label docStatus;
-
-    @FXML
-    private JFXSpinner docPro;
-
-    @FXML
-    private Label dirStatus;
-
-    @FXML
     private Pane backBtn;
 
     @FXML
-    private Pane menu;
+    private Pane menu_btn;
 
     @FXML
-    private Pane menu_btn;
+    private ProgressIndicator working_progress;
+
+    @FXML
+    private Pane menu;
 
     @FXML
     private JFXButton menu_home;
@@ -106,15 +66,6 @@ public class Working implements Initializable {
 
     @FXML
     private JFXButton menu_exit;
-
-    @FXML
-    private JFXProgressBar commonPro1;
-
-    @FXML
-    private JFXProgressBar commonPro2;
-
-    @FXML
-    private JFXSpinner dirPro;
 
     private File workingDir;
     private static String dir;
@@ -163,49 +114,23 @@ public class Working implements Initializable {
         executables = new ArrayList<String>();
         other = new ArrayList<String>();
 
-        comStatus.setVisible(false);
-        vidStatus.setVisible(false);
-        picStatus.setVisible(false);
-        musicStatus.setVisible(false);
-        jarStatus.setVisible(false);
-        exeStatus.setVisible(false);
-        docStatus.setVisible(false);
-        dirStatus.setVisible(false);
-
         workingDir = new File(dir);
 
         initFiles = new InitFiles();
         initFiles.start();
+
+        working_progress.progressProperty().bind(initFiles.progressProperty());
+
         initFiles.setOnSucceeded(e->{
-            comPro.setVisible(false);
-            dirPro.setVisible(false);
-            docPro.setVisible(false);
-            exePro.setVisible(false);
-            jarPro.setVisible(false);
-            musicPro.setVisible(false);
-            picPro.setVisible(false);
-            vidPro.setVisible(false);
+            Stage newStage = new Stage(StageStyle.TRANSPARENT);
+            try {
+                Scene scene = new Scene(FXMLLoader.load(getClass().getResource("status.fxml")));
+                newStage.setScene(scene);
+                newStage.show();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
 
-            comStatus.setVisible(true);
-            vidStatus.setVisible(true);
-            picStatus.setVisible(true);
-            musicStatus.setVisible(true);
-            jarStatus.setVisible(true);
-            exeStatus.setVisible(true);
-            docStatus.setVisible(true);
-            dirStatus.setVisible(true);
-
-            comStatus.setText(compressed.size()+" Found");
-            dirStatus.setText(allDir.size()+" Found");
-            docStatus.setText(documents.size()+" Found");
-            exeStatus.setText(executables.size()+" Found");
-            jarStatus.setText(jar.size()+" Found");
-            musicStatus.setText(music.size()+" Found");
-            picStatus.setText(images.size()+" Found");
-            vidStatus.setText(videos.size()+" Found");
-
-            commonPro1.setVisible(false);
-            commonPro2.setVisible(false);
         });
 
         backBtn.setOnMouseClicked(e->{
@@ -252,41 +177,44 @@ public class Working implements Initializable {
                             String fileName = files[i].getName().toLowerCase();
                             if (fileName.contains(".png") || fileName.contains(".jpg") || fileName.contains(".gif") || fileName.contains(".jpeg")){
                                 images.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images\\"+fileName);*/
                             }
                             if (fileName.contains(".mp4") || fileName.contains(".3gp") || fileName.contains(".mkv") || fileName.contains(".flv")){
                                 videos.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);*/
                             }
                             if (fileName.contains(".mp3") || fileName.contains(".wav") || fileName.contains(".ac3") || fileName.contains(".aac") || fileName.contains(".m4a") || fileName.contains(".ogg")){
                                 music.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);*/
                             }
                             if (fileName.contains(".doc") || fileName.contains(".pdf") || fileName.contains(".epub")){
                                 documents.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents\\"+fileName);*/
                             }
                             if (fileName.contains(".zip") || fileName.contains(".rar") || fileName.contains(".tar")){
                                 compressed.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed\\"+fileName);*/
                             }
                             if (fileName.contains(".jar") || fileName.contains(".java") || fileName.contains(".class")){
                                 jar.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java\\"+fileName);*/
                             }
                             if (fileName.contains(".exe") || fileName.contains(".deb") || fileName.contains(".msi")){
                                 jar.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Softwares\\"+fileName);
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Softwares\\"+fileName);*/
                             }
-                            /*if (fileName.contains(".")){
+                            else {
                                 other.add(files[i].getName());
-                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Other");
-                            }*/
+                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Other");*/
+                            }
                         }
                         if (files[i].isDirectory()){
                             allDir.add(files[i].getName());
                         }
+                        updateProgress(i+1,files.length);
                     }
+
+
                     return null;
                 }
             };
@@ -306,7 +234,7 @@ public class Working implements Initializable {
 
     }
 
-    private void moveFile(String source,String dest){
+    /*private void moveFile(String source,String dest){
         File destination = new File(new File(dest).getParent());
         if (!destination.exists()){
             destination.mkdir();
@@ -315,12 +243,8 @@ public class Working implements Initializable {
             Files.move(Paths.get(source),Paths.get(dest), StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException ignored){
         }
-    }
+    }*/
 
-    @FXML
-    void doneBtnAction(ActionEvent event) throws IOException {
-        goToHome();
-    }
     private void exit() {
         System.exit(0);
     }
