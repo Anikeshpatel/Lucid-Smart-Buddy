@@ -122,14 +122,14 @@ public class Working implements Initializable {
         working_progress.progressProperty().bind(initFiles.progressProperty());
 
         initFiles.setOnSucceeded(e->{
-            Stage newStage = new Stage(StageStyle.TRANSPARENT);
+            /*Stage newStage = new Stage(StageStyle.TRANSPARENT);
             try {
                 Scene scene = new Scene(FXMLLoader.load(getClass().getResource("status.fxml")));
                 newStage.setScene(scene);
                 newStage.show();
             } catch (IOException e1) {
                 e1.printStackTrace();
-            }
+            }*/
 
         });
 
