@@ -12,12 +12,12 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 
-public class Main extends Application {
+public class Launcher extends Application {
     public static Stage curStage;
     @Override
     public void start(Stage primaryStage) throws Exception {
         curStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("splash.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("splash/splash.fxml"));
         FadeTransition transition = new FadeTransition(Duration.seconds(3),root);
         transition.setFromValue(1);
         transition.setToValue(0);
@@ -29,8 +29,7 @@ public class Main extends Application {
         transition.play();
         transition.setOnFinished(e->{
             try {
-                primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
-                System.out.println("DOne");
+                primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("home/Home.fxml"))));
             } catch (IOException e1) {
                 e1.printStackTrace();
             }

@@ -97,7 +97,10 @@ public class HomeController implements Initializable {
         });
 
         download_pane.setOnMouseClicked(e->{
-            Working.setWorkingDir("C:\\Users\\"+System.getProperty("user.name")+"\\Downloads");
+            if(System.getProperty("os.name").toLowerCase().contains("win"))
+                Working.setWorkingDir("C:\\Users\\"+System.getProperty("user.name")+"\\Downloads");
+            else if(System.getProperty("os.name").toLowerCase().contains("linux"))
+                Working.setWorkingDir("/home/"+System.getProperty("user.name")+"/Downloads");
             Stage curStage = (Stage) root.getScene().getWindow();
             try {
                 curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Working_window.fxml"))));
@@ -108,7 +111,10 @@ public class HomeController implements Initializable {
 
         selective_pane.setOnMouseClicked(e->{
             DirectoryChooser chooser = new DirectoryChooser();
-            chooser.setInitialDirectory(new File("C:\\Users\\"+System.getProperty("user.name")+"\\Downloads"));
+            if(System.getProperty("os.name").toLowerCase().contains("win"))
+                chooser.setInitialDirectory(new File("C:\\Users\\"+System.getProperty("user.name")+"\\Downloads"));
+            else if(System.getProperty("os.name").toLowerCase().contains("linux"))
+                chooser.setInitialDirectory(new File("/home/"+System.getProperty("user.name")+"/Downloads"));
             chooser.setTitle("Choose Any Crowd Folder");
             File workingDir = chooser.showDialog(root.getScene().getWindow());
             if (workingDir != null){

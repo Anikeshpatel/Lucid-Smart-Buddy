@@ -15,13 +15,14 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
@@ -64,7 +65,7 @@ public class Working implements Initializable {
 
     private File workingDir;
     private static String dir;
-    private ArrayList<String> allFiles,allDir,images,videos,music,documents,compressed,jar,executables,other;
+    private ArrayList<String> allFiles,allDir,images,videos,movies,music,documents,compressed,jar,executables,other;
     private InitFiles initFiles;
     private TranslateTransition slideTransition;
     private Integer toggle = 1;
@@ -117,16 +118,14 @@ public class Working implements Initializable {
         working_progress.progressProperty().bind(initFiles.progressProperty());
 
         initFiles.setOnSucceeded(e->{
-            Stage newStage = new Stage(StageStyle.TRANSPARENT);
+            /*Stage newStage = new Stage(StageStyle.TRANSPARENT);
             try {
-                Scene scene = new Scene(FXMLLoader.load(getClass().getResource("complete_popup.fxml")));
+                Scene scene = new Scene(FXMLLoader.load(getClass().getResource("status.fxml")));
                 newStage.setScene(scene);
-                /*newStage.initModality(Modality.APPLICATION_MODAL);
-                newStage.initOwner(root.getScene().getWindow());*/
                 newStage.show();
             } catch (IOException e1) {
                 e1.printStackTrace();
-            }
+            }*/
 
         });
 
@@ -174,35 +173,35 @@ public class Working implements Initializable {
                             String fileName = files[i].getName().toLowerCase();
                             if (fileName.contains(".png") || fileName.contains(".jpg") || fileName.contains(".gif") || fileName.contains(".jpeg")){
                                 images.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Images\\"+fileName);
                             }
                             if (fileName.contains(".mp4") || fileName.contains(".3gp") || fileName.contains(".mkv") || fileName.contains(".flv")){
                                 videos.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Videos\\"+fileName);
                             }
                             if (fileName.contains(".mp3") || fileName.contains(".wav") || fileName.contains(".ac3") || fileName.contains(".aac") || fileName.contains(".m4a") || fileName.contains(".ogg")){
                                 music.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Sounds\\"+fileName);
                             }
                             if (fileName.contains(".doc") || fileName.contains(".pdf") || fileName.contains(".epub")){
                                 documents.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Documents\\"+fileName);
                             }
                             if (fileName.contains(".zip") || fileName.contains(".rar") || fileName.contains(".tar")){
                                 compressed.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Compressed\\"+fileName);
                             }
                             if (fileName.contains(".jar") || fileName.contains(".java") || fileName.contains(".class")){
                                 jar.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Java\\"+fileName);
                             }
                             if (fileName.contains(".exe") || fileName.contains(".deb") || fileName.contains(".msi")){
                                 jar.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Softwares\\"+fileName);*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Softwares\\"+fileName);
                             }
                             else {
                                 other.add(files[i].getName());
-                                /*moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Other");*/
+                                moveFile(files[i].getAbsolutePath(),workingDir.getAbsolutePath()+"\\Lucid_Other");
                             }
                         }
                         if (files[i].isDirectory()){
@@ -223,7 +222,7 @@ public class Working implements Initializable {
         slideTransition.setOnFinished(e->{
             Stage curStage = (Stage) root.getScene().getWindow();
             try {
-                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
+                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("home/Home.fxml"))));
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -231,7 +230,7 @@ public class Working implements Initializable {
 
     }
 
-    /*private void moveFile(String source,String dest){
+    private void moveFile(String source,String dest){
         File destination = new File(new File(dest).getParent());
         if (!destination.exists()){
             destination.mkdir();
@@ -240,7 +239,7 @@ public class Working implements Initializable {
             Files.move(Paths.get(source),Paths.get(dest), StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException ignored){
         }
-    }*/
+    }
 
     private void exit() {
         System.exit(0);

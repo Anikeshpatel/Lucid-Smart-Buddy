@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="750.0" stylesheets="@dark.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.anikesh.lucid.Working">
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="750.0" stylesheets="@themes/dark.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.anikesh.lucid.Working">
    <children>
       <AnchorPane fx:id="toolbar" prefHeight="14.0" prefWidth="750.0" styleClass="tool-bar">
          <children>

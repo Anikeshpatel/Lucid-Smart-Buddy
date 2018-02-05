@@ -18,7 +18,7 @@ public class PopUpController {
     void gotoHome(ActionEvent event) {
         Stage curStage = (Stage) root.getScene().getWindow();
         try {
-            curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
+            curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("home/Home.fxml"))));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -32,7 +32,7 @@ public class PopUpController {
 
     @FXML
     void quit(ActionEvent event) {
-        Main.curStage.close();
+        Launcher.curStage.close();
     }
 
     @FXML
