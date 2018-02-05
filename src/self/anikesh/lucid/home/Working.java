@@ -1,4 +1,4 @@
-package self.anikesh.lucid;
+package self.anikesh.lucid.home;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.concurrent.Service;
@@ -222,7 +222,7 @@ public class Working implements Initializable {
         slideTransition.setOnFinished(e->{
             Stage curStage = (Stage) root.getScene().getWindow();
             try {
-                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("home/Home.fxml"))));
+                curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
             } catch (IOException e1) {
                 e1.printStackTrace();
             }

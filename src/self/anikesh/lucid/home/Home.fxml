@@ -11,13 +11,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="750.0" stylesheets="@dark.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.anikesh.lucid.HomeController">
+<AnchorPane fx:id="root" prefHeight="420.0" prefWidth="750.0" stylesheets="@../themes/dark.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="self.anikesh.lucid.home.HomeController">
     <children>
         <AnchorPane fx:id="selective_pane" layoutX="69.0" layoutY="210.0" prefHeight="67.0" prefWidth="618.0" AnchorPane.leftAnchor="69.0">
             <children>
                 <ImageView fitHeight="41.0" fitWidth="75.0" layoutX="97.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../Resources/folder_small.png" />
+                        <Image url="@../../../../Resources/folder_small.png" />
                     </image>
                 </ImageView>
                 <Text fill="WHITE" layoutX="222.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Treat Selective Folder ">
@@ -39,7 +39,7 @@
             <children>
                 <ImageView fitHeight="53.0" fitWidth="55.0" layoutX="92.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../Resources/down_icon_small.png" />
+                        <Image url="@../../../../Resources/down_icon_small.png" />
                     </image>
                 </ImageView>
                 <Text fill="WHITE" layoutX="221.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Treat Download Folder ">
@@ -82,7 +82,7 @@
                     <children>
                         <ImageView fitHeight="22.0" fitWidth="20.0" layoutX="13.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../Resources/menu.png" />
+                                <Image url="@../../../../Resources/menu.png" />
                             </image>
                         </ImageView>
                     </children>
@@ -110,7 +110,7 @@
             <children>
                 <ImageView fitHeight="51.0" fitWidth="62.0" layoutX="95.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../Resources/setting_small.png" />
+                        <Image url="@../../../../Resources/setting_small.png" />
                     </image>
                 </ImageView>
                 <Text fill="WHITE" layoutX="273.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
@@ -133,7 +133,7 @@
             <children>
                 <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="94.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../Resources/about_small.png" />
+                        <Image url="@../../../../Resources/about_small.png" />
                     </image>
                 </ImageView>
                 <Text fill="WHITE" layoutX="282.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About">
@@ -158,7 +158,7 @@
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../Resources/home_small.png" />
+                                <Image url="@../../../../Resources/home_small.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -170,7 +170,7 @@
                     <graphic>
                         <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../Resources/setting_small.png" />
+                                <Image url="@../../../../Resources/setting_small.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -182,7 +182,7 @@
                     <graphic>
                         <ImageView fitHeight="21.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../Resources/about_small.png" />
+                                <Image url="@../../../../Resources/about_small.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -194,7 +194,7 @@
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../Resources/exit_small.png" />
+                                <Image url="@../../../../Resources/exit_small.png" />
                             </image>
                         </ImageView>
                     </graphic>

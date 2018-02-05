@@ -1,4 +1,4 @@
-package self.anikesh.lucid;
+package self.anikesh.lucid.splash;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

@@ -1,8 +1,7 @@
-package self.anikesh.lucid;
+package self.anikesh.lucid.home;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.animation.FadeTransition;
-import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -11,7 +10,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -121,7 +119,7 @@ public class HomeController implements Initializable {
                 Working.setWorkingDir(workingDir.getAbsolutePath());
                 Stage curStage = (Stage) root.getScene().getWindow();
                 try {
-                    curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Working_window.fxml"))));
+                    curStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("working_window.fxml"))));
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
