@@ -6,43 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="PopUp Added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/Launcher.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Home.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/HomeController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/HomeController$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/HomeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Splash.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/StatusController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Working$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Working$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Working$InitFiles$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Working$InitFiles.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/Working.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/splash.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/working_window.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/StatusController.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/Home.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/Home.fxml" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/HomeController.java" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/HomeController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/Splash.java" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/splash/Splash.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/Working.java" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/Working.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/dark.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/dark.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/light.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/light.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/macindos.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/purple.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/purple.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/red.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/red.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/splash.fxml" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/splash/splash.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/working_window.fxml" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/working_window.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Resources/screenshot/scrn1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Resources/screenshot/scrn2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Resources/screenshot/scrn3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Resources/screenshot/scrn4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Working$InitFiles$1.class" afterPath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Working$InitFiles$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Working.class" afterPath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Working.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lucid-Smart-BuddyTemp.iml" afterPath="$PROJECT_DIR$/Lucid-Smart-BuddyTemp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/PopUpController.java" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/PopUpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/complete_popup.fxml" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/complete_popup.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Home.fxml" afterPath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/home/Home.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/themes/macindos.css" afterPath="$PROJECT_DIR$/out/production/Lucid-Smart-BuddyTemp/self/anikesh/lucid/themes/macindos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css" afterPath="$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,14 +75,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Working.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Working.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Working.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3278">
-              <caret line="175" column="44" lean-forward="false" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
+            <state relative-caret-position="2662">
+              <caret line="182" column="41" lean-forward="true" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
               <folding>
-                <element signature="e#4637#8127#0" expanded="true" />
-                <element signature="e#8126#8127#0" expanded="true" />
                 <element signature="method#minimize#0;class#Working#0" expanded="false" />
               </folding>
             </state>
@@ -156,8 +129,8 @@
       <file leaf-file-name="PopUpController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/PopUpController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="110">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#812#813#0" expanded="true" />
@@ -167,14 +140,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Home.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="97" lean-forward="false" selection-start-line="13" selection-start-column="97" selection-end-line="13" selection-end-column="97" />
+            <state relative-caret-position="396">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="macindos.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -183,7 +166,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="955">
               <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
               <folding>
                 <element signature="e#4116#4338#0" expanded="false" />
@@ -196,8 +179,8 @@
       <file leaf-file-name="Launcher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
+            <state relative-caret-position="462">
+              <caret line="31" column="108" lean-forward="true" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -267,6 +250,8 @@
         <option value="$PROJECT_DIR$/src/self/anikesh/lucid/home/HomeController.java" />
         <option value="$PROJECT_DIR$/src/self/anikesh/lucid/Launcher.java" />
         <option value="$PROJECT_DIR$/src/self/anikesh/lucid/home/Working.java" />
+        <option value="$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css" />
+        <option value="$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml" />
       </list>
     </option>
   </component>
@@ -278,10 +263,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="-24" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="342" />
+    <option name="y" value="58" />
+    <option name="width" value="1440" />
+    <option name="height" value="903" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -302,6 +287,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,6 +300,19 @@
               <item name="Lucid Smart Buddy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lucid Smart Buddy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lucid Smart Buddy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lucid Smart Buddy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lucid Smart Buddy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lucid Smart Buddy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Lucid Smart Buddy" type="b2602c69:ProjectViewProjectNode" />
@@ -345,10 +345,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,13 +369,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Resources/screenshot" />
+      <recent name="$PROJECT_DIR$/src/Resources/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/self/anikesh/lucid/themes" />
       <recent name="$PROJECT_DIR$/src/self/anikesh/lucid/splash" />
       <recent name="$PROJECT_DIR$/src/self/anikesh/lucid/home" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Resources/fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -579,17 +578,15 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <list size="4">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Launcher" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Launcher" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.Launcher" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -718,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516175002641</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Some Bug Fixed">
+      <created>1517806643737</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1517806643742</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -726,6 +730,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -735,12 +740,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2786017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27978724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15104167" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -779,7 +784,8 @@
     <MESSAGE value="All Bugs Clear" />
     <MESSAGE value="New Best Themes Added" />
     <MESSAGE value="PopUp Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="PopUp Added" />
+    <MESSAGE value="Some Bug Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some Bug Fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -797,8 +803,6 @@
         <state relative-caret-position="3775">
           <caret line="151" column="42" lean-forward="true" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
           <folding>
-            <element signature="e#4637#8127#0" expanded="true" />
-            <element signature="e#8126#8127#0" expanded="true" />
             <element signature="method#minimize#0;class#Working#0" expanded="false" />
           </folding>
         </state>
@@ -833,14 +837,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -956,29 +953,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/themes/dark.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
           <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="97" lean-forward="false" selection-start-line="13" selection-start-column="97" selection-end-line="13" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,14 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/complete_popup.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1016,22 +987,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
           <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/StatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/StatusController.java" />
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/PopUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="110">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
@@ -1051,9 +1014,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Working.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2662">
+          <caret line="182" column="41" lean-forward="true" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
+          <folding>
+            <element signature="method#minimize#0;class#Working#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="955">
           <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding>
             <element signature="e#4116#4338#0" expanded="false" />
@@ -1064,21 +1037,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="108" lean-forward="false" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
+        <state relative-caret-position="462">
+          <caret line="31" column="108" lean-forward="true" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Working.java">
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/themes/macindos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3278">
-          <caret line="175" column="44" lean-forward="false" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
-          <folding>
-            <element signature="e#4637#8127#0" expanded="true" />
-            <element signature="e#8126#8127#0" expanded="true" />
-            <element signature="method#minimize#0;class#Working#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/self/anikesh/lucid/home/Home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

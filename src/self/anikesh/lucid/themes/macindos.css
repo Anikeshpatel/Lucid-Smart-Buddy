@@ -5,7 +5,7 @@
     hover_text : #B2B2B2;
 }
 .root{
-    -fx-background-image: url("../../../Resources/bg/background6.jpg");
+    -fx-background-image: url("../../../../Resources/bg/background6.jpg");
     -fx-background-size: 770 430;
 }
 #toolbar{
