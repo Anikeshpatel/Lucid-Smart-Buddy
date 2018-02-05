@@ -5,13 +5,18 @@ Lucid is a Java-based software that helps to arrange crowd folders quickly. Its 
 
 ## Some Basic Features  
 * Ultrafast Speed
-* Modern UI
+* Multi Theme Support
 * Light Weight
 
 ### Home 
-![Home](https://raw.githubusercontent.com/Anikeshpatel/Lucid-Smart-Buddy/master/src/Resources/screenshot/Untitled-1.png)  
+![Home](https://github.com/Anikeshpatel/Lucid-Smart-Buddy/raw/master/src/Resources/screenshot/scrn2.png)  
 
+#### Somes Themes  
+![Dark](https://github.com/Anikeshpatel/Lucid-Smart-Buddy/raw/master/src/Resources/screenshot/scrn1.png)
 
+![Light](https://github.com/Anikeshpatel/Lucid-Smart-Buddy/raw/master/src/Resources/screenshot/scrn3.png)
+
+![Danger](https://github.com/Anikeshpatel/Lucid-Smart-Buddy/raw/master/src/Resources/screenshot/scrn4.png)
 
   
 ![Working UI](https://raw.githubusercontent.com/Anikeshpatel/Lucid-Smart-Buddy/master/src/Resources/screenshot/Untitled-2.png)
