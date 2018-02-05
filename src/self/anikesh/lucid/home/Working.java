@@ -168,7 +168,7 @@ public class Working implements Initializable {
                 protected Void call() throws Exception {
                     File[] files = workingDir.listFiles();
                     for (int i=0;i<files.length;i++){
-                        if (files[i].isFile()){
+                        /*if (files[i].isFile()){
                             allFiles.add(files[i].getName());
                             String fileName = files[i].getName().toLowerCase();
                             if (fileName.contains(".png") || fileName.contains(".jpg") || fileName.contains(".gif") || fileName.contains(".jpeg")){
@@ -206,7 +206,7 @@ public class Working implements Initializable {
                         }
                         if (files[i].isDirectory()){
                             allDir.add(files[i].getName());
-                        }
+                        }*/
                         updateProgress(i+1,files.length);
                     }
 
